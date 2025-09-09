@@ -70,22 +70,23 @@ h3 {
 /* ================================
    Home / Hero Section
 ================================ */
+#main{
+
+}
 .av {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   flex-wrap: wrap;
   padding: 50px;
 }
 
 .photo img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 230px;
   border-radius: 50%;
   transform: rotate(347deg);
-  margin-right: 100px;
-
 }
 
 .intro {
@@ -94,48 +95,73 @@ h3 {
 
 .intro h1 {
   font-size: 50px;
-  margin-bottom: 10px;
-  margin-right: 50px;
+
+
 }
 
 .intro h2 {
   font-size: 30px;
-  margin-bottom: 15px;
-  margin-right: 50px;
+  margin-bottom: 118px;
 }
 
 /* ================================
    About Section
 ================================ */
 
+/* About Page Styling */
 .about {
   max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .about p {
   font-size: 18px;
-  margin-top:30px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-.about h2 {
-  margin-bottom: 15px;
-}
-
+/* Qualification Table */
 .about table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin-top: 20px;
+}
+
+.about th {
+  background: burlywood;
+  color: brown;
+  font-weight: bold;
 }
 
 .about table, 
 .about th, 
 .about td {
   border: 1px solid brown;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
+}
+
+.about tr:nth-child(even) {
+  background: #fff7e6;
+}
+
+/* Make Table Responsive */
+@media (max-width: 768px) {
+  .about table {
+    display: block;
+    overflow-x: auto;   /* scrollable */
+    white-space: nowrap;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
 }
 
 /* ================================
@@ -255,14 +281,17 @@ footer {
   .av {
     flex-direction: column;
     text-align: center;
+  
   }
 
   .intro h1 {
     font-size: 28px;
+  
   }
 
   .intro h2 {
     font-size: 18px;
+    
   }
   .icon-links ul {
     justify-content: center;
