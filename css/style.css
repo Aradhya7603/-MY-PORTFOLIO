@@ -77,20 +77,24 @@ h3 {
 }
 .av {
   background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
   flex-wrap: wrap;
-  padding: 50px;
+  margin: auto;
+  padding: 30px;
+  max-width: 1000px;
+  
 }
 
 .photo img {
   width: 250px;
   height: 230px;
   border-radius: 50%;
-  transform: rotate(347deg);
+
 }
 
 .intro {
